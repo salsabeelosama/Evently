@@ -2,7 +2,8 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:evently/core/theme/appColors.dart';
 import 'package:evently/core/theme/appImages.dart';
 import 'package:evently/core/theme/appTexts.dart';
-import 'package:evently/modules/login/screens/loginScreen.dart';
+import 'package:evently/modules/authentication/screens/loginScreen.dart';
+import 'package:evently/modules/authentication/screens/signupScreen.dart';
 import 'package:evently/modules/onBoarding/widgets/customSmallButton.dart';
 import 'package:evently/widgets/customButton.dart';
 import 'package:flutter/material.dart';
@@ -80,7 +81,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => LoginScreen()),
+                        MaterialPageRoute(builder: (context) => SignupScreen()),
                       );
                     },
                     child: Text(
@@ -173,7 +174,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   } else {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => LoginScreen()),
+                      MaterialPageRoute(builder: (context) => SignupScreen()),
                     );
                   }
                 },

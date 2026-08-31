@@ -8,6 +8,7 @@ class Appimages {
   static const sun = "assets/images/sun.png";
   static const moon = "assets/images/moon.png";
   static const supervised = "assets/images/supervised.png";
+  static const google = "assets/images/google.png";
 
 
 }

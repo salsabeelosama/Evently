@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Apptheme {
   static ThemeData light = ThemeData(
+    dividerColor: Appcolors.lightStrokeColor,
+    focusColor: Appcolors.whiteColor,
     scaffoldBackgroundColor: Appcolors.lightbackgroundColor,
     primaryColor: Appcolors.lightPrimaryColor,
     textTheme: TextTheme(
@@ -22,9 +24,16 @@ class Apptheme {
         fontWeight: FontWeight.w500,
         color: Appcolors.lightPrimaryColor,
       ),
+      headlineLarge: TextStyle(
+        fontSize: 24.sp,
+        fontWeight: FontWeight.w600,
+        color: Appcolors.lightPrimaryColor,
+      ),
     ),
   );
   static ThemeData dark = ThemeData(
+    dividerColor: Appcolors.darkStrokeColor,
+    focusColor: Appcolors.darkSmallButtonColor,
     scaffoldBackgroundColor: Appcolors.darkbackgroundColor,
     primaryColor: Appcolors.darkPrimaryColor,
     textTheme: TextTheme(
@@ -41,6 +50,11 @@ class Apptheme {
       titleSmall: TextStyle(
         fontSize: 18.sp,
         fontWeight: FontWeight.w500,
+        color: Appcolors.darkMainTextColor,
+      ),
+      headlineLarge: TextStyle(
+        fontSize: 24.sp,
+        fontWeight: FontWeight.w600,
         color: Appcolors.darkMainTextColor,
       ),
     ),
